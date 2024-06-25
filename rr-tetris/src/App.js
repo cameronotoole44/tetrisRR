@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import reducers from './reducers';
 import './App.css';
+import Controls from './components/Controls';
+import Board from './components/Board';
+import MessagePopup from './components/MessagePopup';
+import NextBlock from './components/NextBlock';
+import Score from './components/Score';
+
+const store = createStore(reducers)
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <Provider store={store}>
+      <div className="App">
+        <header className="App-header">
+          <h1 className="App-title">Tetris with React Redux!</h1>
+        </header>
+        <Board />
+        <NextBlock />
+        <Score />
+        <Controls />
+        <MessagePopup />
+      </div>
+    </Provider>
+  )
+};
 
 export default App;
