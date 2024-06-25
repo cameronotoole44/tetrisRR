@@ -51,7 +51,7 @@ const gameReducer = (state = defaultState(), action) => {
             const gameOver = obj.gameOver
 
             if (gameOver) {
-                // Game Over
+
                 const newState = { ...state }
                 newState.shape = 0
                 newState.grid = newGrid
