@@ -1,15 +1,12 @@
 import React from 'react';
-import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import reducers from './reducers';
+import store from './store';
 import './index.css';
 import Controls from './components/Controls';
 import Board from './components/Board';
 import MessagePopup from './components/MessagePopup';
 import NextBlock from './components/NextBlock';
 import Score from './components/Score';
-
-const store = createStore(reducers)
 
 function App() {
   return (
@@ -25,7 +22,7 @@ function App() {
         <MessagePopup />
       </div>
     </Provider>
-  )
-};
+  );
+}
 
 export default App;
