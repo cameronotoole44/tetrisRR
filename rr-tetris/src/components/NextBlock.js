@@ -17,6 +17,7 @@ export default function NextBlock(props) {
     return (
         <div className="next-block">
             {grid}
+            <div>Controls: WASD, Arrow Keys, or the buttons down below</div>
         </div>
     )
 };
