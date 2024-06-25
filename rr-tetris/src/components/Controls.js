@@ -83,7 +83,7 @@ export default function Controls(props) {
                 default:
                     break;
             }
-        };
+        }; // KEYBOARD CONTROLS // 
 
         window.addEventListener('keydown', handleKeyDown);
 
@@ -123,5 +123,5 @@ export default function Controls(props) {
                 Down
             </button>
         </div>
-    );
-}
+    )
+}; // BUTTON CONTROLS // 
