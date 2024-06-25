@@ -2,7 +2,7 @@ import React from 'react';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import reducers from './reducers';
-import './App.css';
+import './index.css';
 import Controls from './components/Controls';
 import Board from './components/Board';
 import MessagePopup from './components/MessagePopup';
