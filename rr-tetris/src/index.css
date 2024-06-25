@@ -69,14 +69,9 @@ code {
 
 /* SQUARE */
 .grid-square {
-  border-style: solid;
   width: 20px;
   height: 20px;
-  border-width: 5px;
-  border-left-color: #ffffff33;
-  border-top-color: #ffffff54;
-  border-right-color: #00000026;
-  border-bottom-color: #00000080;
+  border: 1px solid #000;
 }
 
 /* BOARD */
@@ -102,14 +97,21 @@ code {
 }
 
 .score-board-button {
-  padding: 0;
+  font-family: "Kode Mono", monospace;
   display: block;
-  padding: 1em;
-  border-width: 5px;
-  border-top-color: #c8c8c8;
-  border-left-color: #dedede;
-  border-right-color: #969696;
-  border-bottom-color: #787878;
+  padding: 10px;
+  border: 2px solid #787878;
+  border-radius: 5px;
+  background-color: #282c34;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.score-board-button:hover {
+  background-color: #3c4047;
 }
 
 /* CONTROLS */
@@ -121,15 +123,20 @@ code {
 
 /* Control Button */
 .control-button {
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  display: block;
-  border-width: 5px;
-  border-top-color: #c8c8c8;
-  border-left-color: #dedede;
-  border-right-color: #969696;
-  border-bottom-color: #787878;
+  font-family: "Kode Mono", monospace;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #787878;
+  border-radius: 5px;
+  background-color: #282c34;
+  color: #fff;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 /* MSG POPUP */
