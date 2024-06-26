@@ -10,15 +10,15 @@ export default function MessagePopup(props) {
     let isHidden = 'hidden';
 
     if (gameOver) {
-        message = 'Game Over'
-        isHidden = ''
+        message = 'Game Over';
+        isHidden = '';
     } else if (!isRunning) {
-        message = 'Paused'
-        isHidden = ''
+        message = 'Paused';
+        isHidden = '';
     }
 
     return (
-        <div className={`message-popup ${isHidden}`}>
+        <div className={`absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-50 h-50 bg-white/80 text-center ${isHidden}`}>
             <h1>{message}</h1>
         </div>
     )

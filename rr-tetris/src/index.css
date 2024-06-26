@@ -96,7 +96,7 @@ code {
   grid-area: r;
 }
 
-.score-board-button {
+/* .score-board-button {
   font-family: "Kode Mono", monospace;
   display: block;
   padding: 10px;
@@ -112,7 +112,7 @@ code {
 }
 .score-board-button:hover {
   background-color: #3c4047;
-}
+} */
 
 /* CONTROLS */
 .controls {
@@ -122,7 +122,7 @@ code {
 }
 
 /* Control Button */
-.control-button {
+/* .control-button {
   font-family: "Kode Mono", monospace;
   width: 60px;
   height: 60px;
@@ -137,7 +137,7 @@ code {
   margin: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
+} */
 
 /* MSG POPUP */
 .message-popup {
@@ -155,3 +155,8 @@ code {
 .message-popup.hidden {
   display: none;
 }
+
+/* TAILWIND */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

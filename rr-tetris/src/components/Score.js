@@ -8,20 +8,30 @@ export default function ScoreBoard(props) {
     const { score, isRunning, gameOver } = game;
 
     return (
-        <div className="score-board">
-            <div>Score:{score}</div>
+        <div className="score">
+            <div>Score: {score}</div>
 
-            <button className="score-board-button" onClick={(e) => {
-                if (gameOver) { return }
-                if (isRunning) {
-                    dispatch(pause())
-                } else {
-                    dispatch(resume())
-                }
-            }}>{isRunning ? 'Pause' : 'Play'}</button>
-            <button className="score-board-button" onClick={(e) => {
-                dispatch(restart())
-            }}>Restart</button>
+            <button
+                className="font-mono block py-2.5 px-5 border-2 border-gray-600 rounded bg-tetris-dark text-white text-xl text-center mb-2.5 cursor-pointer transition duration-300 ease-in-out hover:bg-gray-700"
+                onClick={(e) => {
+                    if (gameOver) { return }
+                    if (isRunning) {
+                        dispatch(pause());
+                    } else {
+                        dispatch(resume());
+                    }
+                }}
+            >
+                {isRunning ? 'Pause' : 'Play'}
+            </button>
+            <button
+                className="font-mono block py-2.5 px-5 border-2 border-gray-600 rounded bg-tetris-dark text-white text-xl text-center mb-2.5 cursor-pointer transition duration-300 ease-in-out hover:bg-gray-700"
+                onClick={(e) => {
+                    dispatch(restart());
+                }}
+            >
+                Restart
+            </button>
         </div>
     )
 };
