@@ -11,7 +11,7 @@ A Tetris game built using React and Redux. I wanted to enhance and showcase my s
 - Multiple control options: WASD keys, arrow keys, and on-screen buttons
 - Redux DevTools integration for state management debugging
 
-## Demo
+
 # [demo](https://tetris-rr.vercel.app/)
 
 
