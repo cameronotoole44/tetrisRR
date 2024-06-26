@@ -92,3 +92,9 @@ const gameReducer = (state = defaultState(), action) => {
 };
 
 export default gameReducer;
+
+
+// TODO: //
+// REFACTOR THE MESS // 
+
+
