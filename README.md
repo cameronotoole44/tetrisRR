@@ -2,7 +2,7 @@
 
 ## Description
 
-A Tetris game built using React and Redux. I wanted to practice and enhance my skills in these technologies while creating a fun and interactive clone of the classic game.
+A Tetris game built using React and Redux. I wanted to enhance and showcase my skills in both of these technologies while creating a fun and interactive clone of the classic game.
 
 ## Features
 
@@ -12,10 +12,12 @@ A Tetris game built using React and Redux. I wanted to practice and enhance my s
 - Redux DevTools integration for state management debugging
 
 ## Demo
+# [demo](https://tetris-rr.vercel.app/)
+
 
 ## Coming Soon
 
-- Add a Leader board for High Scores
+- Add a Leaderboard for High Scores
 
 ## Controls
 
