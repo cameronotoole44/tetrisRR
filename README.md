@@ -18,6 +18,7 @@ A Tetris game built using React and Redux. I wanted to enhance and showcase my s
 ## Coming Soon
 
 - Add a Leaderboard for High Scores
+- Timer
 
 ## Controls
 
