@@ -12,7 +12,7 @@ A Tetris game built using React and Redux. I wanted to enhance and showcase my s
 - Redux DevTools integration for state management debugging
 
 
-# [demo](https://tetris-rr.vercel.app/)
+# [demo](https://bd5e9aab.tetrisrr.pages.dev//)
 
 
 ## Coming Soon
